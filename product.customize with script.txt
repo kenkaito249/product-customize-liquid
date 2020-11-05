@@ -1,0 +1,15 @@
+Google Sheet link:
+https://docs.google.com/spreadsheets/d/1DmFWR5jrjBj5axlJj1OYdlG8joelJdgNj1BrdhShoAU/edit?usp=sharing
+Script:
+https://script.google.com/macros/s/AKfycbx3wb8jrezuOKRL8QdCugJPIoV7jeeIoWq4L8f1j4WWm2Xbxhs/exec
+
+Test:
+<div class="product-subphone">
+											<form id="contact" method="GET" action="https://script.google.com/macros/s/AKfycbx3wb8jrezuOKRL8QdCugJPIoV7jeeIoWq4L8f1j4WWm2Xbxhs/exec">
+											<div class="hide">
+												<input type="text" value="{{product.title}}" name="Product_name">								
+											</div>
+											<input type="tel" id="ContactFormPhone" class="input-full" name="Phone_number" placeholder="Nhập số điện thoại" pattern="[0-9\-]*" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+											<input type="submit" class="btn right btnContactSubmit" value="Gọi lại cho tôi">
+											</form>
+</div>
